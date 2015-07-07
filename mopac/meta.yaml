@@ -12,7 +12,7 @@ source:
   # hopefully forward-compatible with newer versions.
   fn: MOPAC2012_for_CentOS-5.zip # [linux]
   url: http://openmopac.net/MOPAC2012_for_CentOS-5.zip # [linux]
-  md5: ebfca7bac904b04b59f25fdb76d4bcee # [linux]
+  md5: 15273d86b86d2e4cbbb5e493340d881d # [linux]
   
   
 build:
