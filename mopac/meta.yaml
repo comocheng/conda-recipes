@@ -7,12 +7,14 @@ source:
   url: http://openmopac.net/MOPAC2012_for_Macintosh.zip # [osx]
   md5: 2bd2f292f08f05a4ef9f9f9a45bc0df4 # [osx]
   
-  # Not yet tested this, but it seems most anaconda stuff 
-  # is built on CentOS 5 so that it uses an old glibc and is 
-  # hopefully forward-compatible with newer versions.
-  fn: MOPAC2012_for_CentOS-5.zip # [linux]
-  url: http://openmopac.net/MOPAC2012_for_CentOS-5.zip # [linux]
-  md5: 15273d86b86d2e4cbbb5e493340d881d # [linux]
+  fn: MOPAC2012_for_Linux_64_bit.zip # [linux64]
+  url: http://openmopac.net/MOPAC2012_for_Linux_64_bit.zip # [linux64]
+  md5: d5909a8cee3f8d4b174a728611226861 # [linux64]
+
+  fn: MOPAC2012_for_Linux_32_bit.zip # [linux32]
+  url: http://openmopac.net/MOPAC2012_for_Linux_32_bit.zip # [linux32]
+  md5: 15273d86b86d2e4cbbb5e493340d881d # [linux32]
+
   
   
 build:
