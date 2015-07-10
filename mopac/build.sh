@@ -3,7 +3,9 @@ mkdir -p $PREFIX/opt/mopac
 cp -R $SRC_DIR/* $PREFIX/opt/mopac/
 chmod +x $PREFIX/opt/mopac/MOPAC2012.exe
 
-cp $SRC_DIR/libiomp5.so $PREFIX/lib
+mkdir $PREFIX/lib
+cp $SRC_DIR/libiomp5.so $PREFIX/lib/
+chmod +x $PREFIX/lib/libiomp5.so
 
 mkdir $PREFIX/bin
 cp $RECIPE_DIR/mopac.sh $PREFIX/bin/mopac
