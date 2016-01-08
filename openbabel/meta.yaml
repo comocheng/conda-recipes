@@ -5,7 +5,7 @@ package:
 
 source:
     fn: openbabel-2.3.2.tar.gz
-    url: http://sourceforge.net/projects/openbabel/files/openbabel/2.3.2/openbabel-2.3.2.tar.gz [unix]
+    url: http://sourceforge.net/projects/openbabel/files/openbabel/2.3.2/openbabel-2.3.2.tar.gz
     sha1: b8831a308617d1c78a790479523e43524f07d50d
 
     patches:
@@ -22,9 +22,9 @@ build:
 
 requirements:
     build:
-        - cmake      # [unix]
+        - cmake      
         - pkg-config # [unix]
-        - zlib       # [unix]
+        - zlib      
         - swig
         - eigen
         - bzip2 
@@ -43,11 +43,16 @@ test:
     - openbabel
     - pybel
   commands:
-    - cd $SRC_DIR/test ; python test_pybel.py
-    - cd $SRC_DIR/test ; python testbabel.py
-    - cd $SRC_DIR/test ; python testkekule.py
-    - cd $SRC_DIR/test ; python testbindings.py
-    - cd $SRC_DIR/test ; python testexample.py
+    - cd $SRC_DIR/test ; python test_pybel.py [unix]
+    - cd $SRC_DIR/test ; python testbabel.py [unix]
+    - cd $SRC_DIR/test ; python testkekule.py [unix]
+    - cd $SRC_DIR/test ; python testbindings.py [unix]
+    - cd $SRC_DIR/test ; python testexample.py [unix]
+    - python %SRC_DIR%\test\test_pybel.py [win]
+    - python %SRC_DIR%\test\testbabel.py [win]
+    - python %SRC_DIR%\test\testkekule.py [win]
+    - python %SRC_DIR%\test\testbindings.py [win]
+    - python %SRC_DIR%\test\testexample.py [win]
 
 about:
     home: http://www.openbabel.org/
