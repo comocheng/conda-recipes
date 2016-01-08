@@ -12,6 +12,7 @@ requirements:
     - setuptools
 
   run:
+    - graphviz
     - pyparsing
     - python
 
@@ -20,7 +21,9 @@ test:
     - pydot
 
   commands:
-    - cd $SRC_DIR/test ; python pydot_unittest.py
+    - cd $SRC_DIR/test ; python pydot_unittest.py [unix]
+    - cd %SRC_DIR%\test [win]
+    - python %SRC_DIR%\test\pydot_unittest.py [win]
 
 about:
   home: https://github.com/connie/pydot
