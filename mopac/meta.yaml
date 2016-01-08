@@ -14,8 +14,12 @@ source:
   fn: MOPAC2012_for_Linux_32_bit.zip # [linux32]
   url: http://openmopac.net/MOPAC2012_for_Linux_32_bit.zip # [linux32]
   md5: 15273d86b86d2e4cbbb5e493340d881d # [linux32]
-
   
+  fn: MOPAC2012_standalone_for_WINDOWS_64_bit.zip [win64]
+  url:  http://openmopac.net/MOPAC2012_standalone_for_WINDOWS_64_bit.zip [win64]
+  
+  fn: MOPAC2012_standalone_for_WINDOWS_32_bit.zip [win32]
+  url: http://openmopac.net/MOPAC2012_standalone_for_WINDOWS_32_bit.zip [win32]
   
 build:
   number: 2

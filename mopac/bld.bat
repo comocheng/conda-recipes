@@ -1,7 +1,8 @@
-mkdir -p %PREFIX%\opt\mopac
-xcopy /s %SRC_DIR% %PREFIX%\opt\mopac
-chmod +x %PREFIX%\opt\mopac\MOPAC2012.exe
+mkdir -p %PREFIX%\Scripts
+xcopy /s %SRC_DIR% %PREFIX%\Scripts
 
 mkdir %PREFIX%\bin
-cp %RECIPE_DIR%\mopac.sh %PREFIX%\bin\mopac
-chmod +x %PREFIX%\bin\mopac
+
+(echo set MOPAC_LICENSE=%PREFIX%\Scripts) >> %PREFIX%\Scripts\mopac.bat
+(echo %PREFIX%\Scripts\MOPAC2012.exe) >> %PREFIX%\Scripts\mopac.bat
+chmod +x %PREFIX%\Scripts\mopac.bat
