@@ -1,0 +1,11 @@
+diff -Naur before/CMakeLists.txt after/CMakeLists.txt
+--- before/CMakeLists.txt	2016-01-14 23:57:46.239806700 -0500
++++ after/CMakeLists.txt	2016-01-14 23:58:47.336301200 -0500
+@@ -192,6 +192,7 @@
+ ###############################
+ 
+ if (PYTHON_BINDINGS)
++  include(UsePythonTest)
+   set(pybindtests
+       bindings _pybel example)
+   foreach(pybindtest ${pybindtests})
