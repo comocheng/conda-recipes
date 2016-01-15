@@ -9,15 +9,17 @@ copy "%PREFIX%\..\..\libs\libpython27.a" "%PREFIX%\libs\libpython27.a"
 echo %PREFIX%
 pip install -i https://pypi.anaconda.org/rmg/simple pycairo
 
-mkdir build
-cd build
 cmake -DCMAKE_INSTALL_PREFIX=%PREFIX% ^
       -DPYTHON_LIBRARY=%PREFIX%\libs\libpython27.lib ^
       -DPYTHON_EXECUTABLE=%PYTHON% ^
       -DPYTHON_INCLUDE_DIR=%PREFIX%\include ^
       -DPYTHON_BINDINGS=ON ^
       -DRUN_SWIG=ON ^
-      -G "MinGW Makefiles" ..
+      -DZLIB_INCLUDE_DIR=%PREFIX%\include ^
+      -DZLIB_LIBRARY=%PREFIX%\Library\lib\zlib.lib ^
+      -DLIBXML2_INCLUDE_DIR=%PREFIX%\include ^
+      -DLIBXML2_LIBRARIES=%PREFIX%\Library\lib\libxml2.lib ^
+      -G "MinGW Makefiles" 
 
 ::-CMAKE_CXX_COMPILER=%PREFIX\Scripts\g++.exe ^
  ::     -CMAKE_C_COMPILER=%PREFIX\Scripts\gcc.exe 
@@ -31,4 +33,4 @@ mingw32-make install
 ::using option -DPYTHON_PREFIX from ob wiki, but doesn't seem to work
 
 cd scripts\python
-python setup.py install
+%PYTHON% setup.py install
