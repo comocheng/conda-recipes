@@ -16,6 +16,7 @@ source:
         - fix_data_path.diff
         - fix_babel_test_paths.diff
         - fix_pythontest.diff # [win]
+        - libxml_windows_patch.diff # [win]
 
 build:
     number: 4
