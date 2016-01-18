@@ -18,6 +18,7 @@ source:
         - fix_pythontest.diff # [win]
         - libxml_windows_patch.diff # [win]
         - windows_swig_comment.diff # [win]
+        - absence_of_cat_windows.diff # [win]
 
 build:
     number: 4
