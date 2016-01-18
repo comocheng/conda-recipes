@@ -4,7 +4,7 @@ set F77=gfortran
 set F90=gfortran
 
 copy "%PREFIX%\..\..\libs\libpython27.a" "%PREFIX%\libs\libpython27.a"
-cp "%PREFIX%\..\..\Lib\distutils\distutils.cfg" "%PREFIX%\Lib\distutils\distutils.cfg"
+copy "%PREFIX%\..\..\Lib\distutils\distutils.cfg" "%PREFIX%\Lib\distutils\distutils.cfg"
 pip install -i https://pypi.anaconda.org/rmg/simple pycairo
 
 cmake -DCMAKE_INSTALL_PREFIX=%PREFIX% ^
@@ -22,6 +22,14 @@ mingw32-make install
 ::we put them there manually after the build.  This may be possible from CMake
 ::using option -DPYTHON_PREFIX from ob wiki, but doesn't seem to work
 
+
+:: Copy the key binary files to the site packages.  this is an unfortunate workaround for windows
+copy bin\_openbabel.pyd %PREFIX%\Lib\site-packages
+xcopy %PREFIX%\bin %PREFIX%\Library\bin /E
+rmdir /s %PREFIX%\bin
+
+:: Install the python site package
 cd scripts\python
-%PYTHON% setup.py build_ext --compiler=mingw32 --inplace
 %PYTHON% setup.py install
+
+

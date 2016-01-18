@@ -19,6 +19,7 @@ source:
         - libxml_windows_patch.diff # [win]
         - windows_swig_comment.diff # [win]
         - absence_of_cat_windows.diff # [win]
+        - dont_create_extension.diff # [win]
 
 build:
     number: 4
@@ -52,9 +53,7 @@ test:
     - cd $SRC_DIR/test ; python testkekule.py [unix]
     - cd $SRC_DIR/test ; python testbindings.py [unix]
     - cd $SRC_DIR/test ; python testexample.py [unix]
-    - python %SRC_DIR%\test\test_pybel.py [win]
-    - python %SRC_DIR%\test\testbabel.py [win]
-    - python %SRC_DIR%\test\testkekule.py [win]
+    - python run_test.py [win]
     - python %SRC_DIR%\test\testbindings.py [win]
     - python %SRC_DIR%\test\testexample.py [win]
 

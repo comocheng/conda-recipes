@@ -8,6 +8,6 @@ index 2563226..e7298ce 100644
              COMMAND ${CMAKE_COMMAND} -E echo "  sys.setdlopenflags(sys.getdlopenflags() | dl.RTLD_GLOBAL)" >> ob.py
 -            COMMAND cat ${openbabel_SOURCE_DIR}/scripts/python/openbabel.py >> ob.py
 +            COMMAND type python\openbabel.py >> ob.py
-#             COMMAND ${CMAKE_COMMAND} -E copy ob.py ${openbabel_SOURCE_DIR}/scripts/python/openbabel.py
+             COMMAND ${CMAKE_COMMAND} -E copy ob.py ${openbabel_SOURCE_DIR}/scripts/python/openbabel.py
              COMMAND ${CMAKE_COMMAND} -E remove ob.py
              MAIN_DEPENDENCY openbabel-python.i 
