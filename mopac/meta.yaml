@@ -1,28 +1,29 @@
 package:
   name: mopac
-  version: 2012
+  version: 2016
 
 source:
-  fn: MOPAC2012_for_Macintosh.zip # [osx]
-  url: http://openmopac.net/MOPAC2012_for_Macintosh.zip # [osx]
-  md5: 2bd2f292f08f05a4ef9f9f9a45bc0df4 # [osx]
+  fn: MOPAC2016_for_Macintosh.zip # [osx]
+  url: http://openmopac.net/MOPAC2016_for_Macintosh.zip # [osx]
+  md5: 40adbeaccd02d0980a6dc29a5e0d74f2 # [osx]
   
-  fn: MOPAC2012_for_Linux_64_bit.zip # [linux64]
-  url: http://openmopac.net/MOPAC2012_for_Linux_64_bit.zip # [linux64]
-  md5: d5909a8cee3f8d4b174a728611226861 # [linux64]
+  
+  fn: MOPAC2016_for_Linux_64_bit.zip # [linux64]
+  url: http://openmopac.net/MOPAC2016_for_Linux_64_bit.zip # [linux64]
+  md5: 3068aee46894f625b6baf5eab5b1c2e8 # [linux64]
 
-  fn: MOPAC2012_for_Linux_32_bit.zip # [linux32]
-  url: http://openmopac.net/MOPAC2012_for_Linux_32_bit.zip # [linux32]
-  md5: 15273d86b86d2e4cbbb5e493340d881d # [linux32]
+  fn: MOPAC2016_for_Linux_32_bit.zip # [linux32]
+  url: http://openmopac.net/MOPAC2016_for_Linux_32_bit.zip # [linux32]
+  md5: ca976f298d5984c2f2b04a8955eadf28 # [linux32]
   
-  fn: MOPAC2012_standalone_for_WINDOWS_64_bit.zip [win64]
-  url:  http://openmopac.net/MOPAC2012_standalone_for_WINDOWS_64_bit.zip [win64]
+  fn: MOPAC2016_standalone_for_WINDOWS_64_bit.zip [win64]
+  url:  http://openmopac.net/MOPAC2016_standalone_for_WINDOWS_64_bit.zip [win64]
   
-  fn: MOPAC2012_standalone_for_WINDOWS_32_bit.zip [win32]
-  url: http://openmopac.net/MOPAC2012_standalone_for_WINDOWS_32_bit.zip [win32]
+  fn: MOPAC2016_standalone_for_WINDOWS_32_bit.zip [win32]
+  url: http://openmopac.net/MOPAC2016_standalone_for_WINDOWS_32_bit.zip [win32]
   
 build:
-  number: 2
+  number: 1
   binary_relocation: false
 
 test:
