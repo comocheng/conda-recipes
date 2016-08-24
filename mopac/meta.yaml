@@ -10,7 +10,7 @@ source:
   
   fn: MOPAC2016_for_Linux_64_bit.zip # [linux64]
   url: http://openmopac.net/MOPAC2016_for_Linux_64_bit.zip # [linux64]
-  md5: 3068aee46894f625b6baf5eab5b1c2e8 # [linux64]
+  md5: 83ddd4a87760bc6f793237923b69e935 # [linux64]
 
   fn: MOPAC2016_for_Linux_32_bit.zip # [linux32]
   url: http://openmopac.net/MOPAC2016_for_Linux_32_bit.zip # [linux32]
