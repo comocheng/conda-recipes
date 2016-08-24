@@ -1,5 +1,8 @@
 #!/bin/bash
 mkdir -p $PREFIX/opt/mopac
+
+# uncomment the following line for linux-32 build
+# cp $RECIPE_DIR/libiomp5.so $SRC_DIR/
 cp -R $SRC_DIR/* $PREFIX/opt/mopac/
 chmod +x $PREFIX/opt/mopac/MOPAC2016.exe
 
