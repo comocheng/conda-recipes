@@ -44,6 +44,8 @@ requirements:
         - libxml2
         - cairo [unix]
 test:
+  source_files:
+    - '*'
   imports:
     - openbabel
     - pybel
