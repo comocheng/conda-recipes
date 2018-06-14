@@ -21,7 +21,7 @@ requirements:
         - setuptools
         - numpy
         - lpsolve
-
+        - cmake
     run:
         - python
         - numpy
